@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no">
+    <title>WebGL</title>
+</head>
+
+<body style="background-color:#3d3d3d; overflow: hidden;margin: 1px; border: 0px;"> 
+	<!-- Could figure out how to change resolution depending on device, but this will just be designed for 16:9 for now -->
+	<canvas id='glCanvas' width="1280px" height="720px" style='position:absolute; left:0px; top:0px;'></canvas>
+	
+	<!-- Matrix library -->
+	<script language="javascript" src="lib/gl-matrix.js"></script>
+	
+	<!-- Order of these matters alot which is annoying -->
+	<script language="javascript" src="math.js"></script>
+	<script language="javascript" src="shaders.js"></script>
+	<script language="javascript" src="initGL.js"></script>
+	<script language="javascript" src="input.js"></script>
+	<script language="javascript" src="model.js"></script>
+	<script language="javascript" src="main.js"></script>
+	<script language="javascript" src="triangledraw.js"></script>
+	<script language="javascript" src="assets.js"></script>
+	<script language="javascript" src="camera.js"></script>
+
+</body> 
+
+</html>
